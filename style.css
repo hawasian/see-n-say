@@ -2,6 +2,20 @@ html {
     overflow-x: hidden;
 }
 
+body {
+    min-height:100vh;
+    background: #51ADC2;
+    /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(#51ADC2, #3D91AB);
+    /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#51ADC2, #3D91AB);
+    /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#51ADC2, #3D91AB);
+    /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#51ADC2, #3D91AB);
+    /* Standard syntax */
+}
+
 #wrap {
     margin-top: 50px;
     position: relative;
@@ -33,10 +47,11 @@ html {
     display: inline-block;
     width: 20px;
     height: 20px;
+    z-index: 5;
 }
 
 .scrollbar {
-    overflow-y: scroll;
+    overflow-y: auto;
     max-height: 80vh;
 }
 
@@ -57,32 +72,37 @@ html {
     outline: 1px solid slategrey;
 }
 
-.modal-content{
+.modal-content {
     margin-top: 30vh;
 }
 
-.list-group-item{
+.list-group-item {
     position: relative;
 }
-.screen{
+
+.screen {
     width: 100%;
     height: 100%;
     background-color: black;
 }
-.delete{
+
+.delete {
+    z-index: 4;
     display: none;
 }
-.list-group-item:hover .delete, .delete:hover{
+
+.list-group-item:hover .delete,
+.delete:hover {
     display: inline-block;
     position: absolute;
     width: 100%;
     height: 100%;
-    left:0;
+    left: 0;
     top: 0;
-    background-color: rgba(	42, 42, 42, 0.9);
+    background-color: rgba( 42, 42, 42, 0.7);
     text-align: right;
     padding-right: 30%;
     padding-top: 5px;
     font-size: 150%;
-    color:white;
+    color: white;
 }
