@@ -1,0 +1,88 @@
+html {
+    overflow-x: hidden;
+}
+
+#wrap {
+    margin-top: 50px;
+    position: relative;
+    height: 100%;
+    overflow: hidden;
+}
+
+#canvas,
+#arrow,
+#handle,
+#arrow-face,
+#click-face,
+#plate {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.choice {
+    font-size: 15pt;
+    margin: 5px 10px;
+    color: black;
+    background-color: white;
+}
+
+#badge {
+    background-color: red;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+}
+
+.scrollbar {
+    overflow-y: scroll;
+    max-height: 80vh;
+}
+
+#sb_style::-webkit-scrollbar {
+    width: 1em;
+    margin-left: .5em;
+}
+
+#sb_style::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    margin-left: .5em;
+    border-radius: 10px;
+}
+
+#sb_style::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: darkgrey;
+    outline: 1px solid slategrey;
+}
+
+.modal-content{
+    margin-top: 30vh;
+}
+
+.list-group-item{
+    position: relative;
+}
+.screen{
+    width: 100%;
+    height: 100%;
+    background-color: black;
+}
+.delete{
+    display: none;
+}
+.list-group-item:hover .delete, .delete:hover{
+    display: inline-block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left:0;
+    top: 0;
+    background-color: rgba(	42, 42, 42, 0.9);
+    text-align: right;
+    padding-right: 30%;
+    padding-top: 5px;
+    font-size: 150%;
+    color:white;
+}
