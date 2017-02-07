@@ -5,6 +5,7 @@
 	<meta charset="UTF-8">
 	<title>See N Say</title>
 	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css?family=Bowlby+One" rel="stylesheet">
 	<link rel="stylesheet" href="style.css" type="text/css" />
 </head>
 
@@ -31,10 +32,10 @@
 			</div>
 		</div>
 
-		<div class="row">
+		<div class="row" id="header">
 			<div class="col-xs-12">
 				<h1>See N Say</h1>
-				<p>Welcome to See N Say, where we make the decisions you are incapable of! You infant...</p>
+				<p>DECISIONS MADE FOR YOU BY <strong>&lt; C / K / Y &gt;</strong></p>
 			</div>
 		</div>
 

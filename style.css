@@ -21,6 +21,7 @@ body {
     position: relative;
     height: 100%;
     overflow: hidden;
+    /*background-color: red*/
 }
 
 #canvas,
@@ -105,4 +106,14 @@ body {
     padding-top: 5px;
     font-size: 150%;
     color: white;
+}
+
+#header{
+    color:white;
+    padding: 5vh 0;
+    text-align: center;
+}
+
+#el-list{
+    margin: 0 .5em;
 }
