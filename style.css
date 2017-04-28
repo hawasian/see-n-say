@@ -4,16 +4,12 @@ html {
 
 body {
     min-height:100vh;
-    background: #51ADC2;
-    /* For browsers that do not support gradients */
-    background: -webkit-linear-gradient(#51ADC2, #3D91AB);
-    /* For Safari 5.1 to 6.0 */
-    background: -o-linear-gradient(#51ADC2, #3D91AB);
-    /* For Opera 11.1 to 12.0 */
-    background: -moz-linear-gradient(#51ADC2, #3D91AB);
-    /* For Firefox 3.6 to 15 */
-    background: linear-gradient(#51ADC2, #3D91AB);
-    /* Standard syntax */
+    background: #FECBBB;
+}
+#title{
+    background-color:#FE5621;
+    padding-bottom: 90px;
+    margin-bottom: -80px;
 }
 
 #wrap {
@@ -54,6 +50,7 @@ body {
 .scrollbar {
     overflow-y: auto;
     max-height: 80vh;
+    margin-bottom: .25em;
 }
 
 #sb_style::-webkit-scrollbar {
@@ -79,6 +76,8 @@ body {
 
 .list-group-item {
     position: relative;
+    text-align: center;
+    overflow: hidden;
 }
 
 .screen {
@@ -89,31 +88,124 @@ body {
 
 .delete {
     z-index: 4;
-    display: none;
+    /*display: none;*/
 }
 
-.list-group-item:hover .delete,
-.delete:hover {
-    display: inline-block;
+.delete {
     position: absolute;
-    width: 100%;
-    height: 100%;
-    left: 0;
-    top: 0;
-    background-color: rgba( 42, 42, 42, 0.7);
-    text-align: right;
-    padding-right: 30%;
-    padding-top: 5px;
-    font-size: 150%;
-    color: white;
+    left:50%;
+    width:1000px;
+    margin-left: -500px;
+    background-color: #dedede;
+    padding: 30px 0;
+    margin-top: -30px;
+    visibility: hidden;
+}
+
+.list-group-item:hover > .delete{
+    background-color: #FFF;
+    visibility: visible;
 }
 
 #header{
-    color:white;
-    padding: 5vh 0;
+    display: block;
+    color:#202020;
+    margin:0 auto .75em auto;
+    
     text-align: center;
 }
 
 #el-list{
     margin: 0 .5em;
+    overflow-x: hidden;
+}
+
+#el{
+    margin: .5em 0;
+}
+
+#el-head{
+    overflow: auto;
+    padding:.75em 0;
+    border-bottom: thin #BCBCBC inset;
+    
+}
+#el-head h3{
+    margin-top: 0;   
+}
+#list{
+    background:#FEFEFE;
+    border-radius: 3px;
+    box-shadow: 3px 3px 10px 0px rgba(78,78,78, 0.7);
+}
+#list h3{
+    text-align: center;    
+}
+
+.list-container{
+    padding: 0 1.5em .15em 1em;
+}
+
+#nameplate{
+    padding: 3vh 0;
+    margin-top: 1vh;
+}
+
+#workspace{
+    display: flex;
+}
+
+#Spinner{
+    background-color: #FEFEFE;
+    margin-left: 10px;
+    border-radius: 3px;
+    box-shadow: 3px 3px 10px 0px rgba(78,78,78, 0.7);
+}
+
+.btn-focus{
+    background-color: #FEEA3A;
+}
+
+.footer{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #E54918;
+    padding: 20px;
+    font-size: 1.25em;
+}
+@media only screen and (max-width : 992px) {
+
+#nameplate{
+    border: none;
+    padding:0;
+    margin-top:0;
+}
+
+#el{
+    border: none;
+    margin: .5em 0;
+}
+#el-head{
+    overflow: auto;
+    border: none;  
+    padding:.75em 0;
+    width: 90%;
+    padding-left: 10%;
+    
+}
+
+#el-list{
+    width: 90%;
+    padding-left: 10%;
+}
+#workspace{
+    display: inline;
+}
+#list{
+    width: 100vw;
+    position: absolute;
+    left:0;
+}
 }
