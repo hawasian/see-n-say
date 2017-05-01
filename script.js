@@ -8,6 +8,9 @@ var canvas = "#canvas";
 var arrow = "#arrow";
 var aspect = .85;
 var n=0; 
+
+var fontVar ="Bowlby One";
+
 $(document).ready(function(){
     choices = [];
     $('#add-input').focus();
@@ -88,7 +91,7 @@ function updateList(){
         var color = colors[Math.floor(i*cu)];
         output+='<li class="list-group-item" onclick="remove('+i+')" style="background:'+color+';">';
         output+='<span class="label label-default choice">'+choices[i]+'</span>';
-        output+='<span class="delete"> DELETE </span>';
+        output+='<span class="delete"> <i class="fa fa-ban" aria-hidden="true"></i> &nbsp;&nbsp;&nbsp; Remove </span>';
         output+='</li>';
         //output += '<button id="remove" class="btn btn-default" onclick="remove('+i+')">-</button>\n';
     }
@@ -277,12 +280,12 @@ function drawSec(n){
     output += '</defs>';
     
     if(n === 0){
-        output += '<text font-family="Bowlby One" font-size = "'+(max*.1)+'" >';
-        output += '<textPath xlink:href = "#top" startOffset="0%">';
+        output += '<text font-family="'+fontVar+'" font-size = "'+(max*.1)+'" >';
+        output += '<textPath xlink:href = "#top" startOffset="-1%">';
         output += 'Please Add Your';
         output += '</textPath>';
         output += '</text>';
-        output += '<text font-family="Bowlby One" font-size = "'+(max*.1)+'" letter-spacing="4" >';
+        output += '<text font-family="'+fontVar+'" font-size = "'+(max*.1)+'" letter-spacing="4" >';
         output += '<textPath xlink:href = "#btm" startOffset="6%">';
         output += 'Answer Choices';
         output += '</textPath>';
@@ -412,7 +415,7 @@ function drawArrow(canvas){
 
     output += 'Z "';
     output += 'fill="#F6883E" stroke="none" filter="url(#innershadow)"/>';
-    output += '<text x="'+(mx-3.5*u)+'" y="'+(my+5*u)+'" font-family="Bowlby One" font-size="'+(16*u)+'px" transform="rotate(180 '+mx+','+my+')" fill="#C4564A" filter="url(#innershadow)">?</text>';
+    output += '<text x="'+(mx-3.5*u)+'" y="'+(my+5*u)+'" font-family="'+fontVar+'" font-size="'+(16*u)+'px" transform="rotate(180 '+mx+','+my+')" fill="#C4564A" filter="url(#innershadow)">?</text>';
     $(canvas).html(output);
     
 }

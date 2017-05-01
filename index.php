@@ -3,11 +3,12 @@
 
 <head>
 	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
 	<title>See N Say</title>
 	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 
-	<link href="https://fonts.googleapis.com/css?family=Bowlby+One" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Lato|Ubuntu|Bowlby+One" rel="stylesheet">
 	<link rel="stylesheet" href="style.css" type="text/css" />
 </head>
 
@@ -16,7 +17,7 @@
 		<div class="col-xs-12" id="header">
 			<div class="col-md-8 col-md-offset-2" id="nameplate">
 				<h1>See N Say</h1>
-				<p>DECISIONS MADE FOR YOU BY <strong>&lt; C / K / Y &gt;</strong></p>
+				<p>DECISIONS MADE FOR YOU BY <strong id="tagline">&lt; C / K / Y &gt;</strong></p>
 			</div>
 		</div>
 	</div>
@@ -28,7 +29,7 @@
 				<!-- Modal content-->
 				<div class="modal-content">
 					<div class="modal-header">
-						<button type="button" class="close" data-dismiss="modal">&times;</button>
+						<!--<button type="button" class="close" data-dismiss="modal">&times;</button>-->
 						<h4 class="modal-title">The <span id="animal">Cow</span> says:</h4>
 					</div>
 					<div class="modal-body">
@@ -56,7 +57,6 @@
 				</div>
 			</div>
 			<div class="col-md-5 col-md-pull-7" id="list">
-
 				<div id="el-head">
 					<h3>Answer options:</h3>
 					<div class="col-xs-10 col-md-9">
@@ -77,12 +77,30 @@
 				</div>
 			</div>
 		</div>
+		<div class="row">
+			<div class="col-xs-12" id="info">
+				<h3>About this project</h3>
+				<p>This Virtual See-N-Say is a basic desision maker. <br />
+				You can add as many answer options as you would like, and the See-N-Say will select one for you! <br />
+				<br />
+				This application uses Javascript to generate, select, and animate the application, so it is required for your browser to operate the See-N-Say! <br/>
+				<br />
+				Feel free to check this project, and others like it on my website or on GitHub:
+				</p>
+				<div class="col-xs-6 col-md-6">
+					<a href="" class="btn btn-focus">GitHub &nbsp;&nbsp;<i class="fa fa-github-alt" aria-hidden="true"></i></a>
+				</div>
+				<div class="col-xs-6 col-md-6">
+					<a href="" class="btn btn-focus">My Site &nbsp;&nbsp;<i class="fa fa-rss" aria-hidden="true"></i></a>
+				</div>
+			</div>
+		</div>
 	</div>
 
 	<div class="footer container-fluid">
 		<div class="container">
-			<div class="pull-left">Copyright <i class="fa fa-copyright" aria-hidden="true"></i> 2017 Connor Young</div>
-			<div class="pull-right"><a href="http://www.connorkyoung.com">connorkyoung.com</a></div>
+			<div class="col-xs-12 col-md-6" id="cright">Copyright <i class="fa fa-copyright" aria-hidden="true"></i> 2017 Connor Young</div>
+			<div class="col-xs-12 col-md-6" id="homelink"><a href="http://www.connorkyoung.com">connorkyoung.com</a></div>
 		</div>
 	</div>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
