@@ -84,7 +84,7 @@
 		<div class="row">
 			<div class="col-xs-12" id="info">
 				<h3>About this project</h3>
-				<p>This Virtual See-N-Say is a basic desision maker. <br /> You can add as many answer options as you would like, and the See-N-Say will select one for you! <br />
+				<p>This Virtual See-N-Say is a basic decision maker. <br /> You can add as many answer options as you would like, and the See-N-Say will select one for you! <br />
 					<br /> This application uses Javascript to generate, select, and animate the application, so it is required for your browser to operate the See-N-Say! <br/>
 					<br /> Feel free to check this project, and others like it on my website or on GitHub:
 				</p>
